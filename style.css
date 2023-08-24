@@ -250,7 +250,7 @@ svg {
 --------------------------------------------------------------*/
 
 .ui-component-button {
-  border: .0625rem solid #6F79E8;
+  border: .0625rem solid #00000;
   border-radius: var(--ui-radius-button);
   display: block;
   font-weight: 700;
