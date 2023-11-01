@@ -369,7 +369,7 @@ div label[for=ui-component-toggle__yearly] {
 
 /* LOGO */
 
-.ui-section-header--logo { z-index: 1; }
+.ui-section-header--logo { z-index: 100; }
 
 /* HAMBURGER */
 
