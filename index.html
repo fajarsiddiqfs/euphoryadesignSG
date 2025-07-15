@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <link rel="preload" as="style" href="style.css">
     <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
     <header role="banner" class="ui-section-header">
@@ -65,7 +66,7 @@
           <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
             <!-- COPYWRITING -->
             <div>
-              <h1>Get any digital creative work done in one place.</h1>
+              <h1>Get any <span id="word-switcher">digital creative</span> work done in one place.</h1>
               <p class="ui-text-intro">Creative subscriptions to scale your business. Subscribe, pause or cancel anytime.</p>
               <!-- CTA -->
               <div class="ui-component-cta ui-layout-flex">
@@ -255,6 +256,18 @@
     </div>
   </div>
 </footer>
+
+<script>
+  const words = ["digital creative", "Canva", "Figma", "Photoshop", "Illustrator"];
+  let currentIndex = 0;
+  const switcher = document.getElementById("word-switcher");
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % words.length;
+    switcher.textContent = words[currentIndex];
+  }, 2000); // Change every 2 seconds
+</script>
+
 
   </body>
 </html>
