@@ -1153,3 +1153,13 @@ div label[for=ui-component-toggle__yearly] {
     grid-column: 1 / -1 !important; /* full width */
   }
 }
+
+.design-stack p {
+  color: #777;
+  margin-bottom: 40px; /* increase this from 30px to 40px or more */
+}
+
+/* or alternatively */
+.grid {
+  margin-top: 40px; /* add some top margin to separate from text */
+}
