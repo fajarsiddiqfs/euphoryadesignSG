@@ -260,13 +260,19 @@
 <script>
   const words = ["digital creative", "Canva", "Figma", "Photoshop", "Illustrator"];
   let currentIndex = 0;
-  const switcher = document.getElementById("word-switcher");
+  const wordTarget = document.getElementById("wordTarget");
 
-  setInterval(() => {
+  function changeWord() {
     currentIndex = (currentIndex + 1) % words.length;
-    switcher.textContent = words[currentIndex];
-  }, 2000); // Change every 2 seconds
+    wordTarget.style.animation = 'none'; // reset animation
+    void wordTarget.offsetWidth; // force reflow
+    wordTarget.textContent = words[currentIndex];
+    wordTarget.style.animation = 'slideIn 0.6s ease-in-out';
+  }
+
+  setInterval(changeWord, 2000); // change every 2 seconds
 </script>
+
 
 
   </body>
