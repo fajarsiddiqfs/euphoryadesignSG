@@ -1118,7 +1118,10 @@ div label[for=ui-component-toggle__yearly] {
 }
 
 /* Mobile view - ONE square per row */
-
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
   .box {
     width: 100%;
     margin-top: 20px;
@@ -1129,7 +1132,10 @@ div label[for=ui-component-toggle__yearly] {
   }
 }
 
-
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .box {
     width: 100%;
     margin-top: 20px;
@@ -1174,37 +1180,5 @@ div label[for=ui-component-toggle__yearly] {
   to {
     transform: translateY(0%);
     opacity: 1;
-  }
-}
-
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-@media (max-width: 768px) {
-  .ui-layout-grid-2 {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .ui-section-hero,
-  .ui-section-feature,
-  .ui-section-testimonial {
-    padding: 2rem 1rem;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .ui-image-half-right {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  .ui-section-customer__layout img {
-    max-width: 100%;
-    height: auto;
   }
 }
