@@ -97,12 +97,24 @@
       <section class="ui-section-testimonial">
         <div class="ui-layout-container">
           <div class="ui-layout-column-6 ui-layout-column-center">
-            <h2>Contact Us</h2>
+            <h2>Book Call</h2>
             <p class="ui-text-intro">Share your design brief, timeline & budget.</p>
             <!-- CTA -->
             <div class="ui-component-cta ui-layout-flex">
-              <a href="https://euphoryadesign.com/discoverycall" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Book Appointment</a>
-              <p class="ui-text-note"><small>Powered by Cal</small></p>
+              <!-- Cal element-click embed code begins -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "discovery-call", {origin:"https://app.cal.com"});
+
+  
+  // Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
+  // `data-cal-link="fajarsiddiq/discovery-call"`
+  // data-cal-namespace="discovery-call"
+  // `data-cal-config='{"layout":"month_view"}'`
+
+  Cal.ns["discovery-call"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+  <!-- Cal element-click embed code ends -->
             </div>
           </div>
         </div>
